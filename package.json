@@ -1,0 +1,21 @@
+{
+  "name": "duo-paper-cut",
+  "version": "1.0.20",
+  "description": "a cool 3D paper cut",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "3D",
+    "cut",
+    "tree",
+    "paper",
+    "carousel",
+    "paper cut",
+    "paper-cut",
+    "paper-cutting"
+  ],
+  "author": "duofuni",
+  "license": "ISC"
+}
