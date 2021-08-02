@@ -1,6 +1,6 @@
 {
   "name": "duo-paper-cut",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "a cool 3D paper cut",
   "main": "index.js",
   "scripts": {

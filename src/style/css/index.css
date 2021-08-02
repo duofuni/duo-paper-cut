@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.duo-paper-cut .paper-cut {
+  overflow: hidden;
+}
+
 .duo-paper-cut:hover .control {
   opacity: 1;
   transition: opacity 0.5s;
