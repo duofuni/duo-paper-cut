@@ -225,24 +225,24 @@ export default {
     },
     playFn(direction) {
       direction === "+" ? ++this.current : --this.current;
-      // when current exceed 6
+      // when current exceed 4
       if (this.current > this.srcList.length - 1) {
         this.current = 0;
-        this.doFn(0);
+        this.cuttingFn(0);
         return;
       }
       // when current less than 0
       if (this.current < 0) {
         this.current = this.srcList.length - 1;
-        this.doFn(this.current);
+        this.cuttingFn(this.current);
         return;
       }
 
-      this.doFn(this.current);
+      this.cuttingFn(this.current);
     },
-    doFn(i) {
+    cuttingFn(i) {
       let liList = this.arrayLikeToArray(this.$refs["paper-cut"].children);
- 
+
       liList.forEach((item) => {
         this.setStyleByName(
           item,
@@ -277,7 +277,7 @@ export default {
       switch (e.target.getAttribute("data-paperCut-action")) {
         case "point":
           clearInterval(this.timer);
-          this.doFn(i);
+          this.cuttingFn(i);
           this.current = i;
           this.autoPlay && this.autoPlayFn();
           break;
